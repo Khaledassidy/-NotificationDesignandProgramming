@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--houn bade 2a3ml l notification layout -->
+<!--bade 5ale root howe relative-->
+<!--heed l notification b2labo 3onsouren textview le fee 3adad l notification w,w l image view l image ta3et l notification-->
+<!--    l textview 2elo shape m3ayan fa brou7 3ala l drawble ba3mlo shape-->
+
+<!--    hala2 ana 7atet l textview 3ala yamen l image notification bas lezm tkoun feyete aktar w heda she b7elo l margin negative -->
+<!--    ana bade yeha mn maylet l start t2adem 3al start fa bt7ot margin start masln -10 fa bt2dem mn ne7yet l strat 10-->
+    <ImageView
+        android:id="@+id/costume_notification_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_notifications_24"
+        android:layout_centerInParent="true">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textview_number_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/costume_notification_shape"
+        android:text="10"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginBottom="-15dp"
+        android:layout_above="@id/costume_notification_image_view"
+        android:layout_toRightOf="@id/costume_notification_image_view">
+
+    </TextView>
+</RelativeLayout>
+
+<!--hala2 ana heek 5alsta iza bade esta3mla bel menue ta3el ystem l toolbar-->
+<!--b wa7de mn l item fe attribute esma app:actionLayout=:"bt7ot esm heed l file le howe costume notification"-->
+<!--ba3den bel menue java bel method le oncrateoption menue -->
+<!--btjeeb l item 2awl she MenueItem menueitem=menue.findItem(R.id.menue_notification);
+
+ba3dne jeeb l view le b2lab tasmem
+
+View view=menueitem.getActionView();
+TextxView textview=view.findViewbyId(R.id.textview_number_notification);
+
+textview.settext("5");
+-->
